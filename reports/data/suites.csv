@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed May 11 13:35:06 CST 2022","Wed May 11 13:35:06 CST 2022","2","test_case.user_manage","test_user","TestYaml","","","test_del_tag[caseinfo0]",""
+"passed","Wed May 11 13:35:06 CST 2022","Wed May 11 13:35:06 CST 2022","243","test_case.user_manage","test_user","TestYaml","","","test_add_tag[caseinfo0]",""
+"passed","Wed May 11 13:35:05 CST 2022","Wed May 11 13:35:06 CST 2022","482","test_case.user_manage","test_user","TestYaml","","","test_get_token[caseinfo0]",""
+"passed","Wed May 11 13:35:06 CST 2022","Wed May 11 13:35:06 CST 2022","239","test_case.user_manage","test_user","TestYaml","","","test_add_tag[caseinfo1]",""
+"passed","Wed May 11 13:35:06 CST 2022","Wed May 11 13:35:06 CST 2022","263","test_case.user_manage","test_user","TestYaml","","","test_get_tag[caseinfo0]",""

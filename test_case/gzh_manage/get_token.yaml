@@ -1,0 +1,32 @@
+-
+  name: 获取鉴权码
+  request:
+    method: get
+    url: https://api.weixin.qq.com/cgi-bin/token
+    data:
+      grant_type: client_credential
+      appid: wxde6c7f73842fe0d6
+      secret: 6a3af6156f86205146d1abcadc13dd8d
+  validate:
+    assert_str: access_token
+-
+  name: 获取鉴权码
+  request:
+    method: get
+    url: https://api.weixin.qq.com/cgi-bin/token
+    data:
+      grant_type: client_credential
+      appid: wxde6c7f73842fe0d6
+      secret: 6a3af6156f86205146d1abcadc13dd8d
+  validate:
+    assert_str: access_token
+-
+  name: 获取鉴权码
+  request:
+    method: get
+    url: https://api.weixin.qq.com/cgi-bin/token
+    data:
+      grant_type: client_credential
+      secret: 6a3af6156f86205146d1abcadc13dd8d
+  validate:
+    assert_str: errcode

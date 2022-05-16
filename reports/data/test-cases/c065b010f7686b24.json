@@ -1,0 +1,74 @@
+{
+  "uid" : "c065b010f7686b24",
+  "name" : "test_add_tag[caseinfo0]",
+  "fullName" : "test_case.user_manage.test_user.TestYaml#test_add_tag",
+  "historyId" : "aa721efc2421bb1664add8ab3e382987",
+  "time" : {
+    "start" : 1652247306127,
+    "stop" : 1652247306370,
+    "duration" : 243
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "exe_user",
+    "time" : {
+      "start" : 1652247305642,
+      "stop" : 1652247305642,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case.user_manage"
+  }, {
+    "name" : "suite",
+    "value" : "test_user"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestYaml"
+  }, {
+    "name" : "host",
+    "value" : "PC-20180915DYDK"
+  }, {
+    "name" : "thread",
+    "value" : "33340-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.user_manage.test_user"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '创建标签', 'request': {'method': 'post', 'url': 'https://api.weixin.qq.com/cgi-bin/tags/create?access_token=', 'data': {'tag': {'name': '湖南人'}}}, 'validate': 'errcode'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c065b010f7686b24.json",
+  "parameterValues" : [ "{'name': '创建标签', 'request': {'method': 'post', 'url': 'https://api.weixin.qq.com/cgi-bin/tags/create?access_token=', 'data': {'tag': {'name': '湖南人'}}}, 'validate': 'errcode'}" ]
+}
