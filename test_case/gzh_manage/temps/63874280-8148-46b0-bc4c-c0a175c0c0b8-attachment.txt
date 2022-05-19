@@ -1,0 +1,2 @@
+INFO     root:assertbase.py:13 请求结果断言失败:预期结果包含errcode,实际结果{"errcode":41002,"errmsg":"appid missing rid: 62862a8f-10a6dafb-0a174319"}
+ERROR    root:assertbase.py:29 请求状态码对比成功,请求状态码为:200,断言状态码为:200

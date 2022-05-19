@@ -4,7 +4,8 @@ import jsonpath as jsonpath
 import pytest
 import requests
 from common.assertbase import AssertBase
-from common.yaml_util import read_yaml
+from common.requests_until import RequestsUtil
+from common.yaml_util import read_yaml,write_yaml
 
 
 class TestApi:
@@ -13,12 +14,12 @@ class TestApi:
         method = caseinfo['request']["method"]
         url = caseinfo['request']["url"]
         data = caseinfo['request']["data"]
-        res=requests.get(url,data)
-        ass=AssertBase()
-        ass.assert_main(caseinfo['validate'],res)
-        # js_res=jsonpath.jsonpath(res.json(),'$.*')
-        # print(js_res)
-        # re_result=re.search('"access_token":"(.*?)"',res.text)
-        # print(re_result.group(1))
+        res=RequestsUtil.send_requests(method,url,data)
+        myass=AssertBase()
+        myass.assert_main(caseinfo['validate']['assert_str'],res)
+        myass.assert_status(caseinfo['validate']['assert_code'],res.status_code)
+        if 'access_token' in res.json():
+            write_yaml(res.json(),'test_case/gzh_manage/token.yaml')
+
 
 

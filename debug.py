@@ -8,7 +8,10 @@ def get_obj_path():
 def get_rand_num(min,max):
     return random.randint(int(min),int(max))
 def read_tag_yaml(path):
-    print(get_obj_path()+path)
     with open(get_obj_path()+path,mode="r",encoding='utf-8') as f:
         value=yaml.load(stream=f,Loader=yaml.FullLoader)
     return value
+def read_token(path):
+    with open(get_obj_path()+path,mode="r",encoding='utf-8') as f:
+        value=yaml.load(stream=f,Loader=yaml.FullLoader)
+    return value['access_token']

@@ -23,10 +23,14 @@ def read_yaml(yamlpath):
     # function_model=importlib.import_module("debug")
     # all_function=inspect.getmembers(function_model,inspect.isfunction())
     # return dict(all_function)
+    # with open(get_obj_path()+yamlpath,mode="r",encoding='utf-8') as f:
+    #     value=yaml.load(stream=f,Loader=yaml.FullLoader)
+    #     return value
+
+def load_yaml(yamlpath):
     with open(get_obj_path()+yamlpath,mode="r",encoding='utf-8') as f:
         value=yaml.load(stream=f,Loader=yaml.FullLoader)
-        return value
-
+        yield value
 def write_yaml(data,yamlpath):
     with open(get_obj_path()+yamlpath,encoding='utf-8',mode='w') as f:
         yaml.dump(data,stream=f,allow_unicode=True)

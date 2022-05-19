@@ -29,7 +29,7 @@ class TestYaml():
     @pytest.mark.parametrize("caseinfo", read_yaml("/test_case/user_manage/create_tag.yaml"))
     def test_add_tag(self, caseinfo):
         method = caseinfo['request']["method"]
-        url = caseinfo['request']["url"] + self.get_token()
+        url = caseinfo['request']["url"]
         data = caseinfo['request']["data"]
         res = RequestsUtil.send_requests(method, url, data)
         if  caseinfo['validate']=='errcode':
@@ -40,7 +40,7 @@ class TestYaml():
     @pytest.mark.parametrize("caseinfo", read_yaml("/test_case/user_manage/get_tag.yaml"))
     def test_get_tag(self,caseinfo):
         method = caseinfo['request']["method"]
-        url = caseinfo['request']["url"] + self.get_token()
+        url = caseinfo['request']["url"]
         res=RequestsUtil.send_requests(method,url,[])
         assert caseinfo['validate'] in res.json()
         write_yaml(res.json()['tags'],self.tag_yaml)
@@ -48,7 +48,7 @@ class TestYaml():
     @pytest.mark.parametrize("caseinfo", read_yaml("/test_case/user_manage/del_tag.yaml"))
     def test_del_tag(self,caseinfo):
         method = caseinfo['request']["method"]
-        url = caseinfo['request']["url"] + self.get_token()
+        url = caseinfo['request']["url"]
         data = caseinfo['request']["data"]
         print(caseinfo)
 

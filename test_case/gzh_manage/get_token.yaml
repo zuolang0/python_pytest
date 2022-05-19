@@ -6,9 +6,10 @@
     data:
       grant_type: client_credential
       appid: wxde6c7f73842fe0d6
-      secret: 6a3af6156f86205146d1abcadc13dd8d
+      secret: ""
   validate:
-    assert_str: access_token
+    assert_str: errcode
+    assert_code: 200
 -
   name: 获取鉴权码
   request:
@@ -20,6 +21,8 @@
       secret: 6a3af6156f86205146d1abcadc13dd8d
   validate:
     assert_str: access_token
+    assert_code: 200
+
 -
   name: 获取鉴权码
   request:
@@ -30,3 +33,4 @@
       secret: 6a3af6156f86205146d1abcadc13dd8d
   validate:
     assert_str: errcode
+    assert_code: 200
