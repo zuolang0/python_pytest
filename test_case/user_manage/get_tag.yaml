@@ -2,5 +2,6 @@
   name: 获取标签
   request:
     method: post
-    url: https://api.weixin.qq.com/cgi-bin/tags/get?access_token={{read_token('/test_case/user_manage/token.yaml')}}
-  validate: tags
+    url: https://api.weixin.qq.com/cgi-bin/tags/get?access_token={{read_token('/test_case/token.yaml')}}
+  validate:
+    assert_str: tags

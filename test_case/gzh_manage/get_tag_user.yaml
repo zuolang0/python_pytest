@@ -2,6 +2,6 @@
   name: 获取用户标签
   request:
     method: post
-    url:  https://api.weixin.qq.com/cgi-bin/user/tag/get?access_token={{read_token('/test_case/gzh_manage/token.yaml')}}
+    url:  https://api.weixin.qq.com/cgi-bin/user/tag/get?access_token={{read_token('/test_case/token.yaml')}}
   validate:
     assert_str: count

@@ -1,15 +1,26 @@
 {
-  "total" : 1,
+  "total" : 2,
   "items" : [ {
+    "uid" : "9247c5cc5574bcabd52df2db379c72d9",
+    "name" : "test_case.gzh_manage",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 22,
+      "unknown" : 0,
+      "total" : 22
+    }
+  }, {
     "uid" : "11c69babd991d87a82e3f784a3e8d072",
     "name" : "test_case.user_manage",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 5,
+      "passed" : 4,
       "unknown" : 0,
-      "total" : 5
+      "total" : 4
     }
   } ]
 }

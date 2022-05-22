@@ -1,0 +1,6 @@
+email:
+  popserver: 'pop.qq.com'
+  smtpserver: 'smtp.qq.com'
+  username: '1154505909@qq.com'
+  password: 'ixmkideteztljdea'
+  receiver: '1154505909@qq.com'

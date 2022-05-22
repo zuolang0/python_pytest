@@ -4,74 +4,347 @@
   "children" : [ {
     "name" : "PC-20180915DYDK",
     "children" : [ {
-      "name" : "33340-MainThread",
+      "name" : "90560-MainThread",
       "children" : [ {
-        "name" : "test_get_token[caseinfo0]",
-        "uid" : "c2cc39e34c1d2477",
-        "parentUid" : "c0c891711589f53626d582773e0abf42",
-        "status" : "passed",
-        "time" : {
-          "start" : 1652247305642,
-          "stop" : 1652247306124,
-          "duration" : 482
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'name': '获取鉴权码', 'request': {'method': 'get', 'url': 'https://api.weixin.qq.com/cgi-bin/token', 'data': {'grant_type': 'client_credential', 'appid': 'wxde6c7f73842fe0d6', 'secret': '6a3af6156f86205146d1abcadc13dd8d'}}, 'validate': {'expires_in': 7200}}" ]
-      }, {
-        "name" : "test_add_tag[caseinfo1]",
-        "uid" : "348f6745052b301d",
-        "parentUid" : "c0c891711589f53626d582773e0abf42",
-        "status" : "passed",
-        "time" : {
-          "start" : 1652247306374,
-          "stop" : 1652247306613,
-          "duration" : 239
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'name': '创建标签', 'request': {'method': 'post', 'url': 'https://api.weixin.qq.com/cgi-bin/tags/create?access_token=', 'data': {'tag': {'name': '美国人1358'}}}, 'validate': 'id'}" ]
-      }, {
         "name" : "test_get_tag[caseinfo0]",
-        "uid" : "a099462bf8b1cbbb",
-        "parentUid" : "c0c891711589f53626d582773e0abf42",
+        "uid" : "70b713e6d6ca860f",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
         "status" : "passed",
         "time" : {
-          "start" : 1652247306616,
-          "stop" : 1652247306879,
-          "duration" : 263
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'name': '获取标签', 'request': {'method': 'post', 'url': 'https://api.weixin.qq.com/cgi-bin/tags/get?access_token='}, 'validate': 'tags'}" ]
-      }, {
-        "name" : "test_add_tag[caseinfo0]",
-        "uid" : "c065b010f7686b24",
-        "parentUid" : "c0c891711589f53626d582773e0abf42",
-        "status" : "passed",
-        "time" : {
-          "start" : 1652247306127,
-          "stop" : 1652247306370,
+          "start" : 1653138916923,
+          "stop" : 1653138917166,
           "duration" : 243
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'name': '创建标签', 'request': {'method': 'post', 'url': 'https://api.weixin.qq.com/cgi-bin/tags/create?access_token=', 'data': {'tag': {'name': '湖南人'}}}, 'validate': 'errcode'}" ]
+        "parameters" : [ "{'name': '获取标签', 'request': {'method': 'post', 'url': 'https://api.weixin.qq.com/cgi-bin/tags/get?access_token=57_y_R_p0IDvwB5GaraLVQII96mI_DmRRqPU50DjlN2avo-Xvw0ZDE4VShhpuGJ51rNkCmDklidYFN0Heve-t8d4JdMYDvcHnk6J6itkfuUZJ07_Ri0Ywi3_rs_QB8CuLbxBqWILyB9rnOahabqBRQgAFAHXW'}, 'validate': {'assert_str': 'tags'}}" ]
       }, {
-        "name" : "test_del_tag[caseinfo0]",
-        "uid" : "a43b001cfd81a368",
-        "parentUid" : "c0c891711589f53626d582773e0abf42",
+        "name" : "test_get_tag_user[caseinfo4]",
+        "uid" : "a60c7a094aa3b6e5",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
         "status" : "passed",
         "time" : {
-          "start" : 1652247306884,
-          "stop" : 1652247306886,
-          "duration" : 2
+          "start" : 1653138915015,
+          "stop" : 1653138915287,
+          "duration" : 272
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'name': '获取标签', 'request': {'method': 'post', 'url': 'https://api.weixin.qq.com/cgi-bin/tags/delete?access_token=', 'data': {'tag': {'id': [{'count': 0, 'id': 2, 'name': '星标组'}, {'count': 0, 'id': 100, 'name': '\\\\\\\\u6e56\\\\\\\\u5357\\\\\\\\u4eba'}, {'count': 0, 'id': 101, 'name': '\\\\\\\\u7f8e\\\\\\\\u56fd\\\\\\\\u4eba'}, {'count': 0, 'id': 102, 'name': '\\\\\\\\u7f8e\\\\\\\\u56fd\\\\\\\\u4eba1'}, {'count': 0, 'id': 103, 'name': '\\\\\\\\u7f8e\\\\\\\\u56fd\\\\\\\\u4eba2'}, {'count': 0, 'id': 104, 'name': '\\\\\\\\u7f8e\\\\\\\\u56fd\\\\\\\\u4eba4'}, {'count': 0, 'id': 105, 'name': '\\\\\\\\u7f8e\\\\\\\\u56fd\\\\\\\\u4eba1004'}]}}}, 'validate': 'tags'}" ]
+        "parameters" : [ "{'count': 0, 'id': 105, 'name': '\\\\u7f8e\\\\u56fd\\\\u4eba1004'}" ]
+      }, {
+        "name" : "test_get_tag_user[caseinfo6]",
+        "uid" : "5bf03d0a917dbeac",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138915533,
+          "stop" : 1653138915800,
+          "duration" : 267
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'count': 0, 'id': 107, 'name': '??3316'}" ]
+      }, {
+        "name" : "test_get_tag_user[caseinfo0]",
+        "uid" : "b1c7abc324d6db90",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138913862,
+          "stop" : 1653138914138,
+          "duration" : 276
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'count': 0, 'id': 2, 'name': '星标组'}" ]
+      }, {
+        "name" : "test_del_tag[caseinfo8]",
+        "uid" : "bcb2d3ba9c1d20b4",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138913852,
+          "stop" : 1653138913856,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'count': 0, 'id': 109, 'name': '??3098'}" ]
+      }, {
+        "name" : "test_get_tag_user[caseinfo2]",
+        "uid" : "48d2ebe24b925bec",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138914414,
+          "stop" : 1653138914715,
+          "duration" : 301
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'count': 0, 'id': 103, 'name': '\\\\u7f8e\\\\u56fd\\\\u4eba2'}" ]
+      }, {
+        "name" : "test_del_tag[caseinfo0]",
+        "uid" : "659aa4ce9e4c34ff",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138917175,
+          "stop" : 1653138917175,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '删除标签', 'request': {'method': 'post', 'url': 'https://api.weixin.qq.com/cgi-bin/tags/delete?access_token=57_y_R_p0IDvwB5GaraLVQII96mI_DmRRqPU50DjlN2avo-Xvw0ZDE4VShhpuGJ51rNkCmDklidYFN0Heve-t8d4JdMYDvcHnk6J6itkfuUZJ07_Ri0Ywi3_rs_QB8CuLbxBqWILyB9rnOahabqBRQgAFAHXW'}, 'validate': 'tags'}" ]
+      }, {
+        "name" : "test_get_tag_user[caseinfo1]",
+        "uid" : "608fdb0b95633579",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138914145,
+          "stop" : 1653138914407,
+          "duration" : 262
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'count': 0, 'id': 100, 'name': '\\\\u6e56\\\\u5357\\\\u4eba'}" ]
+      }, {
+        "name" : "test_get_tag_user[caseinfo5]",
+        "uid" : "10cdd5dc55362a86",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138915299,
+          "stop" : 1653138915521,
+          "duration" : 222
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'count': 0, 'id': 106, 'name': '\\\\u7f8e\\\\u56fd\\\\u4eba1358'}" ]
+      }, {
+        "name" : "test_del_tag[caseinfo0]",
+        "uid" : "72984ef64f6670e2",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138913769,
+          "stop" : 1653138913775,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'count': 0, 'id': 2, 'name': '星标组'}" ]
+      }, {
+        "name" : "test_del_tag[caseinfo5]",
+        "uid" : "e25ff60c03edb654",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138913822,
+          "stop" : 1653138913827,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'count': 0, 'id': 106, 'name': '\\\\u7f8e\\\\u56fd\\\\u4eba1358'}" ]
+      }, {
+        "name" : "test_del_tag[caseinfo6]",
+        "uid" : "6ebe8212e94a6817",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138913833,
+          "stop" : 1653138913837,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'count': 0, 'id': 107, 'name': '??3316'}" ]
+      }, {
+        "name" : "test_get_tag_user[caseinfo3]",
+        "uid" : "8ab0fdc41b2a043c",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138914724,
+          "stop" : 1653138915006,
+          "duration" : 282
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'count': 0, 'id': 104, 'name': '\\\\u7f8e\\\\u56fd\\\\u4eba4'}" ]
+      }, {
+        "name" : "test_01_api[caseinfo1]",
+        "uid" : "a1796de9e6b6e43a",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138912561,
+          "stop" : 1653138912805,
+          "duration" : 244
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '获取鉴权码', 'request': {'method': 'get', 'url': 'https://api.weixin.qq.com/cgi-bin/token', 'data': {'grant_type': 'client_credential', 'appid': 'wxde6c7f73842fe0d6', 'secret': '6a3af6156f86205146d1abcadc13dd8d'}}, 'validate': {'assert_str': 'access_token', 'assert_code': 200}}" ]
+      }, {
+        "name" : "test_get_tag_user[caseinfo8]",
+        "uid" : "b40ab59a8501d84b",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138916096,
+          "stop" : 1653138916374,
+          "duration" : 278
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'count': 0, 'id': 109, 'name': '??3098'}" ]
+      }, {
+        "name" : "test_del_tag[caseinfo4]",
+        "uid" : "16d9f503e1a03a4b",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138913812,
+          "stop" : 1653138913817,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'count': 0, 'id': 105, 'name': '\\\\u7f8e\\\\u56fd\\\\u4eba1004'}" ]
+      }, {
+        "name" : "test_01_api[caseinfo2]",
+        "uid" : "2fc1d48733522ee5",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138912812,
+          "stop" : 1653138912873,
+          "duration" : 61
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '获取鉴权码', 'request': {'method': 'get', 'url': 'https://api.weixin.qq.com/cgi-bin/token', 'data': {'grant_type': 'client_credential', 'secret': '6a3af6156f86205146d1abcadc13dd8d'}}, 'validate': {'assert_str': 'errcode', 'assert_code': 200}}" ]
+      }, {
+        "name" : "test_del_tag[caseinfo1]",
+        "uid" : "7b7939383700bc83",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138913780,
+          "stop" : 1653138913786,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'count': 0, 'id': 100, 'name': '\\\\u6e56\\\\u5357\\\\u4eba'}" ]
+      }, {
+        "name" : "test_add_tag[caseinfo0]",
+        "uid" : "defc61e112d50eaf",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138916385,
+          "stop" : 1653138916662,
+          "duration" : 277
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '创建标签', 'request': {'method': 'post', 'url': 'https://api.weixin.qq.com/cgi-bin/tags/create?access_token=57_y_R_p0IDvwB5GaraLVQII96mI_DmRRqPU50DjlN2avo-Xvw0ZDE4VShhpuGJ51rNkCmDklidYFN0Heve-t8d4JdMYDvcHnk6J6itkfuUZJ07_Ri0Ywi3_rs_QB8CuLbxBqWILyB9rnOahabqBRQgAFAHXW', 'data': {'tag': {'name': '湖南人'}}}, 'validate': {'assert_str': 'errcode'}}" ]
+      }, {
+        "name" : "test_add_tag[caseinfo1]",
+        "uid" : "c104c651e2e5ea9f",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138916671,
+          "stop" : 1653138916915,
+          "duration" : 244
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '创建标签', 'request': {'method': 'post', 'url': 'https://api.weixin.qq.com/cgi-bin/tags/create?access_token=57_y_R_p0IDvwB5GaraLVQII96mI_DmRRqPU50DjlN2avo-Xvw0ZDE4VShhpuGJ51rNkCmDklidYFN0Heve-t8d4JdMYDvcHnk6J6itkfuUZJ07_Ri0Ywi3_rs_QB8CuLbxBqWILyB9rnOahabqBRQgAFAHXW', 'data': {'tag': {'name': '中国1070'}}}, 'validate': {'assert_str': 'id'}}" ]
+      }, {
+        "name" : "test_del_tag[caseinfo3]",
+        "uid" : "112dcddd3ffd9da",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138913802,
+          "stop" : 1653138913807,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'count': 0, 'id': 104, 'name': '\\\\u7f8e\\\\u56fd\\\\u4eba4'}" ]
+      }, {
+        "name" : "test_01_api[caseinfo0]",
+        "uid" : "75f4171c19e1480b",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138911414,
+          "stop" : 1653138912556,
+          "duration" : 1142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '获取鉴权码', 'request': {'method': 'get', 'url': 'https://api.weixin.qq.com/cgi-bin/token', 'data': {'grant_type': 'client_credential', 'appid': 'wxde6c7f73842fe0d6', 'secret': ''}}, 'validate': {'assert_str': 'errcode', 'assert_code': 200}}" ]
+      }, {
+        "name" : "test_get_tag_user[caseinfo7]",
+        "uid" : "7cb7c474f637f42c",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138915812,
+          "stop" : 1653138916085,
+          "duration" : 273
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'count': 0, 'id': 108, 'name': '??6101'}" ]
+      }, {
+        "name" : "test_del_tag[caseinfo7]",
+        "uid" : "647745a5d72f15b",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138913842,
+          "stop" : 1653138913847,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'count': 0, 'id': 108, 'name': '??6101'}" ]
+      }, {
+        "name" : "test_del_tag[caseinfo2]",
+        "uid" : "2e8b78123335fd29",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138913792,
+          "stop" : 1653138913797,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'count': 0, 'id': 103, 'name': '\\\\u7f8e\\\\u56fd\\\\u4eba2'}" ]
+      }, {
+        "name" : "test_get_tag[caseinfo0]",
+        "uid" : "4fd792c9f9d9e5d4",
+        "parentUid" : "1fc5b5ed5de49f64566e7a52db53581f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653138912886,
+          "stop" : 1653138913760,
+          "duration" : 874
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '获取用户标签', 'request': {'method': 'get', 'url': 'https://api.weixin.qq.com/cgi-bin/tags/get?access_token=57_y_R_p0IDvwB5GaraLVQII96mI_DmRRqPU50DjlN2avo-Xvw0ZDE4VShhpuGJ51rNkCmDklidYFN0Heve-t8d4JdMYDvcHnk6J6itkfuUZJ07_Ri0Ywi3_rs_QB8CuLbxBqWILyB9rnOahabqBRQgAFAHXW', 'data': []}, 'validate': {'assert_str': 'tags'}}" ]
       } ],
-      "uid" : "c0c891711589f53626d582773e0abf42"
+      "uid" : "1fc5b5ed5de49f64566e7a52db53581f"
     } ],
     "uid" : "577930fc64d9cebf451b19d8d84198ff"
   } ]

@@ -1,0 +1,75 @@
+{
+  "uid" : "c104c651e2e5ea9f",
+  "name" : "test_add_tag[caseinfo1]",
+  "fullName" : "test_case.user_manage.test_user.TestYaml#test_add_tag",
+  "historyId" : "68999d7d7996e6e81cd6b7da1bbc2523",
+  "time" : {
+    "start" : 1653138916671,
+    "stop" : 1653138916915,
+    "duration" : 244
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "178b1d8c04c286a0",
+      "name" : "log",
+      "source" : "178b1d8c04c286a0.txt",
+      "type" : "text/plain",
+      "size" : 135
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case.user_manage"
+  }, {
+    "name" : "suite",
+    "value" : "test_user"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestYaml"
+  }, {
+    "name" : "host",
+    "value" : "PC-20180915DYDK"
+  }, {
+    "name" : "thread",
+    "value" : "90560-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.user_manage.test_user"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '创建标签', 'request': {'method': 'post', 'url': 'https://api.weixin.qq.com/cgi-bin/tags/create?access_token=57_y_R_p0IDvwB5GaraLVQII96mI_DmRRqPU50DjlN2avo-Xvw0ZDE4VShhpuGJ51rNkCmDklidYFN0Heve-t8d4JdMYDvcHnk6J6itkfuUZJ07_Ri0Ywi3_rs_QB8CuLbxBqWILyB9rnOahabqBRQgAFAHXW', 'data': {'tag': {'name': '中国1070'}}}, 'validate': {'assert_str': 'id'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c104c651e2e5ea9f.json",
+  "parameterValues" : [ "{'name': '创建标签', 'request': {'method': 'post', 'url': 'https://api.weixin.qq.com/cgi-bin/tags/create?access_token=57_y_R_p0IDvwB5GaraLVQII96mI_DmRRqPU50DjlN2avo-Xvw0ZDE4VShhpuGJ51rNkCmDklidYFN0Heve-t8d4JdMYDvcHnk6J6itkfuUZJ07_Ri0Ywi3_rs_QB8CuLbxBqWILyB9rnOahabqBRQgAFAHXW', 'data': {'tag': {'name': '中国1070'}}}, 'validate': {'assert_str': 'id'}}" ]
+}

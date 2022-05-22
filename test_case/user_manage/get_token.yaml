@@ -8,4 +8,4 @@
       appid: wxde6c7f73842fe0d6
       secret: 6a3af6156f86205146d1abcadc13dd8d
   validate:
-    expires_in: 7200
+    assert_str: access_token

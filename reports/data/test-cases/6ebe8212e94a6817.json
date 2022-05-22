@@ -1,0 +1,59 @@
+{
+  "uid" : "6ebe8212e94a6817",
+  "name" : "test_del_tag[caseinfo6]",
+  "fullName" : "test_case.gzh_manage.Test_tag.TestTag#test_del_tag",
+  "historyId" : "2f791e1d4482439df4f230fc76e4ebff",
+  "time" : {
+    "start" : 1653138913833,
+    "stop" : 1653138913837,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case.gzh_manage"
+  }, {
+    "name" : "suite",
+    "value" : "Test_tag"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestTag"
+  }, {
+    "name" : "host",
+    "value" : "PC-20180915DYDK"
+  }, {
+    "name" : "thread",
+    "value" : "90560-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.gzh_manage.Test_tag"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'count': 0, 'id': 107, 'name': '??3316'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6ebe8212e94a6817.json",
+  "parameterValues" : [ "{'count': 0, 'id': 107, 'name': '??3316'}" ]
+}
