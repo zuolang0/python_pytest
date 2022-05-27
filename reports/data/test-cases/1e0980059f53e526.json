@@ -1,0 +1,65 @@
+{
+  "uid" : "1e0980059f53e526",
+  "name" : "test_del_tag[caseinfo8]",
+  "fullName" : "test_case.gzh_manage.Test_tag.TestTag#test_del_tag",
+  "historyId" : "543f27e0e9571f1f40b6118b6bd8a461",
+  "time" : {
+    "start" : 1653271601176,
+    "stop" : 1653271601179,
+    "duration" : 3
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'TestTag' object has no attribute 'logging'",
+  "statusTrace" : "self = <test_case.gzh_manage.Test_tag.TestTag object at 0x0000000004A177F0>\ncaseinfo = {'count': 0, 'id': 109, 'name': '??3098'}\n\n    @pytest.mark.parametrize('caseinfo',read_yaml('test_case/gzh_manage/tag.yaml'))\n    def test_del_tag(self,caseinfo):\n        base=read_yaml('test_case/gzh_manage/del_tag.yaml')\n        url=base['request']['url']\n        method=base['request']['method']\n        data={'tag':{'id':caseinfo['id']}}\n>       self.logging.info(\"请求地址:{}\".format(url))\nE       AttributeError: 'TestTag' object has no attribute 'logging'\n\ntest_case\\gzh_manage\\Test_tag.py:31: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case.gzh_manage"
+  }, {
+    "name" : "suite",
+    "value" : "Test_tag"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestTag"
+  }, {
+    "name" : "host",
+    "value" : "PC-20180915DYDK"
+  }, {
+    "name" : "thread",
+    "value" : "88956-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.gzh_manage.Test_tag"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'count': 0, 'id': 109, 'name': '??3098'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "1e0980059f53e526.json",
+  "parameterValues" : [ "{'count': 0, 'id': 109, 'name': '??3098'}" ]
+}

@@ -2,7 +2,7 @@ import requests
 from common.logger import Logger
 class RequestsUtil:
     session =requests.session()
-    logging=Logger().logger
+    logging=Logger()
     @classmethod
     def send_requests(self,method,url,data,**kwargs):
         method=str(method).lower()

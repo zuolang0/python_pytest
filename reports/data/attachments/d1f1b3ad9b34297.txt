@@ -1,0 +1,2 @@
+INFO     root:test_user.py:38 请求地址:https://api.weixin.qq.com/cgi-bin/tags/create?access_token=57_y_R_p0IDvwB5GaraLVQII96mI_DmRRqPU50DjlN2avo-Xvw0ZDE4VShhpuGJ51rNkCmDklidYFN0Heve-t8d4JdMYDvcHnk6J6itkfuUZJ07_Ri0Ywi3_rs_QB8CuLbxBqWILyB9rnOahabqDVXgAFAKCE
+INFO     root:test_user.py:39 请求方法:post

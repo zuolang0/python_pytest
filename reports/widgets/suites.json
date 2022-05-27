@@ -1,26 +1,26 @@
 {
   "total" : 2,
   "items" : [ {
+    "uid" : "11c69babd991d87a82e3f784a3e8d072",
+    "name" : "test_case.user_manage",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
     "uid" : "9247c5cc5574bcabd52df2db379c72d9",
     "name" : "test_case.gzh_manage",
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 24,
       "skipped" : 0,
-      "passed" : 22,
+      "passed" : 0,
       "unknown" : 0,
-      "total" : 22
-    }
-  }, {
-    "uid" : "11c69babd991d87a82e3f784a3e8d072",
-    "name" : "test_case.user_manage",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 4,
-      "unknown" : 0,
-      "total" : 4
+      "total" : 24
     }
   } ]
 }

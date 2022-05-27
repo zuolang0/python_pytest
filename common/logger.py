@@ -12,13 +12,15 @@ import sys
 import logging
 from time import strftime
 
-class Logger(object):
+class Logger():
+
     def __init__(self):
-        self._logger=logging.getLogger()
+        self._logger=logging.getLogger('mylog')
         self.DEFAULT_LOG_FILENAME='{0}{1}.log'.format(LOG_OUT_PATH,strftime("%Y-%m-%d"))
         self.formatter=logging.Formatter(fmt=DEFAULT_LOG_FMT,datefmt=DEFUALT_LOG_DATEFMT)
-        self._logger.addHandler(self._get_file_handler(self.DEFAULT_LOG_FILENAME))
-        self._logger.addHandler(self._get_console_handler())
+        if not self._logger.handlers:
+            self._logger.addHandler(self._get_file_handler(self.DEFAULT_LOG_FILENAME))
+            self._logger.addHandler(self._get_console_handler())
         self._logger.setLevel(logging.INFO)
 
     def _get_file_handler(self,filename):
@@ -30,9 +32,27 @@ class Logger(object):
         console_handler=logging.StreamHandler(sys.stdout)
         console_handler.setFormatter(self.formatter)
         return console_handler
-    @property
-    def logger(self):
-        return self._logger
+
+    def debug(self, msg):
+        return self._logger.debug(msg)
+
+    def info(self,msg):
+        return self._logger.info(msg)
+
+    def warning(self,msg):
+        return self._logger.warning(msg)
+
+    def error(self,msg):
+        return self._logger.error(msg)
+
+    def critical(self,msg):
+        return self._logger.critical(msg)
+
+    def log_request(self,data):
+        self._logger.info("请求地址:{}".format(data['url']))
+        self._logger.info("请求方法:{}".format(data['method']))
+        if 'data' in data:
+            self._logger.info("请求参数:{}".format(data['data']))
 
 # if __name__ == '__main__':
 #     import datetime
