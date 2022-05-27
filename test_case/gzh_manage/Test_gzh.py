@@ -1,6 +1,3 @@
-import json
-import re
-
 
 import pytest
 from common.assertbase import AssertBase
@@ -17,10 +14,8 @@ class TestApi:
         method = caseinfo['request']["method"]
         url = caseinfo['request']["url"]
         data = caseinfo['request']["data"]
-
         self.log.log_request(caseinfo['request'])
         res=RequestsUtil.send_requests(method,url,data)
-
         self.myass.assert_main(caseinfo['validate']['assert_str'],res)
         self.myass.assert_status(caseinfo['validate']['assert_code'],res.status_code)
         if 'access_token' in res.json():

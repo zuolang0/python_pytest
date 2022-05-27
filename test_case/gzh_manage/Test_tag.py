@@ -1,7 +1,4 @@
-import json
-
 import pytest
-import requests
 from common.assertbase import AssertBase
 from common.requests_until import RequestsUtil
 from common.yaml_util import read_yaml,write_yaml,load_yaml
