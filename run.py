@@ -10,14 +10,13 @@ def get_token():
     url = "https://api.weixin.qq.com/cgi-bin/token"
     data = {
         "grant_type": "client_credential",
-        "appid": "wxde6c7f73842fe0d6",
-        "secret": "6a3af6156f86205146d1abcadc13dd8d"
+        "appid": "",
+        "secret": ""
     }
     res=RequestsUtil.send_requests(method,url,data)
     return res.json()
 
-def report():
-    pass
+
 def send_email():
     pass
 if __name__ == '__main__':
@@ -26,7 +25,7 @@ if __name__ == '__main__':
     pytest.main()
     time.sleep(2)
     date=str(datetime.date.today())
-    os.system("allure generate ./temps -o D:/Wamp64/www/"+date+" --clean")
+    os.system("allure generate -o D:/Wamp64/www/"+date+" --clean")
     url="http://localhost/"+date
     em=Emails()
     em.send_email('测试报告',url)

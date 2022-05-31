@@ -1,0 +1,4 @@
+[32mINFO    [0m mylog:logger.py:40 请求地址:https://api.weixin.qq.com/cgi-bin/tags/create?access_token=57_gxPkG6MlnKyhc0duj6nB5Se7y5L1nmh51cDc9x69pCKiVnhAfTizgiI_7UbMS4k-OlmMNfCszSE1U2690uwg2sQiZ-z8Ba4wQ1dYWyXQa6uOpe0UlyF9AHk2dN6-PzcJUd6gftGUEIpICThWANWjAAAWJS
+[32mINFO    [0m mylog:logger.py:40 请求方法:post
+[32mINFO    [0m mylog:logger.py:40 请求参数:{'tag': {'name': '中国1195'}}
+[32mINFO    [0m mylog:logger.py:40 请求结果断言失败:预期结果包含id,实际结果{"errcode":42001,"errmsg":"access_token expired rid: 629679a9-14deef8d-50a589cd"}
