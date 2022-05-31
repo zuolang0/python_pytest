@@ -1,0 +1,20 @@
+-
+  name: 创建标签
+  request:
+    method: post
+    url: https://api.weixin.qq.com/cgi-bin/tags/create?access_token=
+    data:
+      tag:
+        name: 湖南人
+  validate:
+    assert_str: errcode
+-
+  name: 创建标签
+  request:
+    method: post
+    url: https://api.weixin.qq.com/cgi-bin/tags/create?access_token=
+    data:
+      tag:
+        name: 中国{{get_rand_num(1000,2000)}}
+  validate:
+    assert_str: id

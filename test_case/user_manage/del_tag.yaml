@@ -1,7 +1,0 @@
--
-  name: 删除标签
-#  tag_path:
-  request:
-    method: post
-    url: https://api.weixin.qq.com/cgi-bin/tags/delete?access_token={{read_token('/test_case/token.yaml')}}
-  validate: tags

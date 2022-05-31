@@ -5,7 +5,7 @@ from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 from email.mime.multipart import MIMEMultipart
 class Emails:
-    def send_email(self,subject,filepath):
+    def send_email(self,subject,url):
         message=MIMEMultipart('related')
         conf=read_yaml('/conf/conf.yaml')
         # fujian=MIMEText(open(filepath,'rb').read(),'html','utf-8')
@@ -13,9 +13,8 @@ class Emails:
 
         message['to']=conf['email']['receiver']
         message['subject']=subject
-        page = MIMEText(open(filepath, 'rb').read())
-        page.add_header('Content-Disposition', 'attachment', filename=filepath)
-        message.attach(MIMEText(page, 'html', 'utf-8'))
+
+        message.attach(MIMEText(url, 'html', 'utf-8'))
 
         smtp= smtplib.SMTP()
         smtp.connect(conf['email']['smtpserver'])

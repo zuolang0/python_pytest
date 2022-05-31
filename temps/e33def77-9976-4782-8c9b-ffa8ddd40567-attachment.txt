@@ -1,4 +1,0 @@
-INFO     root:test_user.py:49 请求地址:https://api.weixin.qq.com/cgi-bin/tags/get?access_token=57_y_R_p0IDvwB5GaraLVQII96mI_DmRRqPU50DjlN2avo-Xvw0ZDE4VShhpuGJ51rNkCmDklidYFN0Heve-t8d4JdMYDvcHnk6J6itkfuUZJ07_Ri0Ywi3_rs_QB8CuLbxBqWILyB9rnOahabqDVXgAFAKCE
-INFO     root:test_user.py:50 请求方法:post
-INFO     root:test_user.py:52 请求结果:{'errcode': 42001, 'errmsg': 'access_token expired rid: 628aec32-26aed7f3-0a31519b'}
-INFO     root:assertbase.py:17 请求结果断言失败:预期结果包含tags,实际结果{"errcode":42001,"errmsg":"access_token expired rid: 628aec32-26aed7f3-0a31519b"}

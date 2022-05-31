@@ -10,7 +10,7 @@ class AssertBase:
             assert jsonpath.jsonpath(res.json(),'$.['+assert_str+']') != False
             # 断言成功记录日志
             self.logging.info('请求结果断言成功:预期结果包含'+assert_str+',实际结果'+res.text)
-            return False
+
         except Exception:
             # 断言失败记录日志
             self.logging.info('请求结果断言失败:预期结果包含'+assert_str+',实际结果'+res.text)
